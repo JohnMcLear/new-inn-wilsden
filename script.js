@@ -75,6 +75,7 @@ function renderAles(ales){
 }
 
 function applyContact(cfg){
+  /*
   const contact = document.getElementById('contact-block');
   const addrLines = [cfg.address.line1, cfg.address.line2, cfg.address.town, cfg.address.postcode].filter(Boolean);
   contact.innerHTML = `
@@ -96,6 +97,7 @@ function applyContact(cfg){
   const map = document.getElementById('map-frame');
   const mapSrc = `https://www.google.com/maps?q=${mapsQ}&output=embed`;
   map.src = mapSrc;
+  */
 }
 
 // Boot
