@@ -1,0 +1,20 @@
+# Site configuration for The New Inn — edit safely via GitHub
+name: The New Inn
+tagline: Wilsden, Bradford
+contact:
+  phone: "01535 275400"
+  email: "newinnwilsden@yahoo.com"
+  facebook: "https://www.facebook.com/newinnwilsden"
+  address:
+    line1: "114 Main Street"
+    line2: ""
+    town: "Wilsden, Bradford"
+    postcode: "BD15 0AB"
+hours:
+  Monday: "Closed"
+  Tuesday: "Closed"
+  Wednesday: "16:00 – 21:30"
+  Thursday: "16:00 – 22:30"
+  Friday: "14:00 – 23:00"
+  Saturday: "12:30 – 23:00"
+  Sunday: "13:30 – 22:00"

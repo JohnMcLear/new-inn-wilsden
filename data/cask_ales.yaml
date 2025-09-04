@@ -1,0 +1,17 @@
+# Cask list — update as barrels come and go.
+casks:
+  - name: "Marston's EPA"
+    brewery: "Marston's"
+    abv: 3.6
+    style: "Bitter"
+    notes: "Crisp, refreshing session ale — our regular."
+  - name: "Guest Pale"
+    brewery: "Rotating"
+    abv: 4.2
+    style: "Pale Ale"
+    notes: "Bright, hoppy and very drinkable."
+  - name: "Seasonal Dark"
+    brewery: "Rotating"
+    abv: 4.8
+    style: "Porter/Stout"
+    notes: "Rich roasty notes — perfect as the nights draw in."

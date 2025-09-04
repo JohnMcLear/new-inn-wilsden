@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The New Inn — Wilsden</title>
+  <meta name="description" content="The New Inn in Wilsden, Bradford — a warm, friendly local with real cask ales, live sport, darts, beer garden and regular live music." />
+  <link rel="preload" href="fonts/Inter-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="js/js-yaml.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="The New Inn home">
+        <img src="images/logo.svg" width="44" height="44" alt="The New Inn logo" />
+        <span class="brand-text">
+          <strong>The New Inn</strong>
+          <em>Wilsden, Bradford</em>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#ales">Cask Ales</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="cta" href="#visit">Get in touch</a>
+      <button class="menu" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <picture>
+        <img src="images/hero.svg" alt="Cosy pub interior illustration" />
+      </picture>
+      <div class="hero-copy container">
+        <h1>Your friendly local in the heart of Wilsden</h1>
+        <p>Proper pints, a warm welcome, Sky &amp; TNT Sports, darts, and a sunny beer garden. Dogs welcome. See you at the bar.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#events">See what's on</a>
+          <a class="btn btn-ghost" href="#ales">Today’s cask list</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <div class="about-grid">
+        <div>
+          <h2>About the pub</h2>
+          <p>The New Inn is a traditional village pub with a relaxed, multi‑room feel and plenty of character. Four hand-pulls pour a rotating lineup of cask ales alongside a broad range of lagers, ciders, wines and spirits.</p>
+          <ul class="ticks">
+            <li>Sky &amp; TNT Sports on big screens</li>
+            <li>Two dartboards &amp; games room</li>
+            <li>Large car park &amp; beer garden</li>
+            <li>Dog friendly — water bowls &amp; treats</li>
+            <li>Bar snacks (try the warm pork scratchings!)</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Opening hours</h3>
+          <p class="muted">Hours can vary for events and bank holidays — check our Facebook for the latest.</p>
+          <dl id="hours-list" class="hours"></dl>
+          <a class="inline" id="facebook-link" href="#" rel="noopener" target="_blank">Facebook updates →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Upcoming events</h2>
+          <p class="muted">Live music, darts, and more. Updates are managed in a simple YAML file.</p>
+        </div>
+        <div id="events-list" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="ales">
+      <div class="container">
+        <div class="section-head">
+          <h2>On the hand-pulls</h2>
+          <p class="muted">Core and guest casks. Check the board in the pub for real‑time availability.</p>
+        </div>
+        <div id="ales-list" class="cards ales"></div>
+      </div>
+    </section>
+
+    <section id="visit" class="alt">
+      <div class="container visit">
+        <div class="visit-card">
+          <h2>Visit us</h2>
+          <div class="contact" id="contact-block">
+            <!-- populated from YAML -->
+          </div>
+          <div class="btn-row">
+            <a class="btn" id="directions-link" target="_blank" rel="noopener">Directions</a>
+            <a class="btn btn-ghost" id="phone-link">Call</a>
+          </div>
+        </div>
+        <iframe id="map-frame" title="Map to The New Inn" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" width="36" height="36" alt="The New Inn logo small" />
+        <div>
+          <strong>The New Inn</strong><br/>
+          <span class="muted">Wilsden, Bradford</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a id="email-link" href="#">Email</a>
+        <a id="facebook-link-footer" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="footer-meta muted">
+        <span>&copy; <span id="year"></span> The New Inn. All rights reserved.</span>
+        <span>Website: simple static files — update events &amp; ales via <code>/data/*.yaml</code>.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

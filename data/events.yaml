@@ -1,0 +1,16 @@
+# Upcoming events — add, edit, or remove items. Dates in ISO format.
+events:
+  - title: "Open Mic Night"
+    date: "2025-09-14 20:30"
+    description: "Acoustic, poetry, and good vibes. All welcome."
+    badge: "Music"
+    link: "https://www.facebook.com/newinnwilsden"
+  - title: "Darts League — Home Match"
+    date: "2025-09-18 19:30"
+    description: "Cheer on the Wilsden arrows."
+    badge: "Darts"
+  - title: "Classic & Sports Car Meet"
+    date: "2025-09-28 18:00"
+    description: "Shiny motors and shinier pints in the car park (weather permitting)."
+    badge: "Social"
+    link: "https://www.facebook.com/newinnwilsden"
